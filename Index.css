@@ -1,0 +1,87 @@
+:root
+{
+    --ColorA : #193948;
+    --ColorB : #FCDC73;
+    --ColorC : #E76268;
+    --ColorD : #4FADC0;
+}
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body
+{
+    display: grid;
+    place-items: center;
+    height: 100vh;
+    background-color: var(--ColorD);
+    text-align: center;
+}
+.Main
+{
+    background-color: var(--ColorC);
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0px 0px 10px ;
+    margin: 20px;
+}
+.Box
+{
+    display: flex;
+}
+.Box *
+{
+    margin: 10px;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+button , .Box *
+{
+    border: 0px;
+}
+.Box *:focus
+{
+    outline: none;   
+}
+button
+{
+    padding: 10px 20px;
+    margin: 10px;
+    border-radius: 5px;
+    background-color:#FCDC73;
+    color:#193948;
+    width: 50%;
+}
+button:hover
+{
+    cursor: pointer;
+}
+p
+{
+    padding: 10px 20px;
+    border: 2px solid #193948;
+    margin: 10px;
+    border-radius: 5PX;
+}
+
+
+@media (max-width:450px)
+{
+    .Box
+    {
+        flex-direction: column;
+    }
+    .Main
+    {
+        width: 90%;
+        margin: auto;
+        padding: 10px;
+    }
+    p
+    {
+        padding: 5px;
+    }
+}
